@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ApexLegendsApp"
+             x:Class="ApexLegendsApp.MainPage">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button Command="{Binding GoToWeaponsCommand}" Text="Weapons"/>
+        <Button Command="{Binding GoToServerStatusCommand}" Text="Server status"/>
+    </StackLayout>
+
+</ContentPage>
