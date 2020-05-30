@@ -18,11 +18,7 @@ namespace ApexLegendsApp.ViewModels
         public List<Weapon> Weapons
         {
             get => _weapons;
-            set
-            {
-                _weapons = value;
-                OnPropertyChanged();
-            }
+          set=>SetValue(ref _weapons,value);
         }
 
         public override async void OnAppearing()
