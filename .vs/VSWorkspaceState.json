@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ApexLegendsApp"
+    "\\ApexLegendsApp",
+    "\\ApexLegendsApp\\Model",
+    "\\ApexLegendsApp\\Services",
+    "\\ApexLegendsApp\\ViewModels"
   ],
-  "SelectedNode": "\\ApexLegendsApp\\ApexLegendsApp.csproj",
+  "SelectedNode": "\\ApexLegendsApp\\ViewModels\\MainViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

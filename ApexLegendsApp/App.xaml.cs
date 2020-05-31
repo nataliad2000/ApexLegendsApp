@@ -28,6 +28,7 @@ namespace ApexLegendsApp
         protected override void OnResume()
         {
             // Handle when your app resumes
+            DependencyService.Register<IGameDataAPIService, GameDataApiService>();
         }
     }
 }

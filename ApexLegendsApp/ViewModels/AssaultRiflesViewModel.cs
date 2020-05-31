@@ -10,7 +10,7 @@ namespace ApexLegendsApp.ViewModels
 
         public AssaultRiflesViewModel()
         {
-            _gameDataApiService = new GameDataApiService();
+            _gameDataApiService = DependencyService.Get<IGameDataAPIService>();
         }
 
         private List<Weapon> _weapons;
