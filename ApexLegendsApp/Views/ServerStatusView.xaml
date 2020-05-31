@@ -4,10 +4,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ApexLegendsApp.Views.ServerStatusView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Coming soon..."
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="stacklayout">
+            <ActivityIndicator x:Name="ActivityIndicator"/>
+            <ScrollView Orientation="Both">
+                <StackLayout>
+                    <ListView x:Name="lista" WidthRequest="2000" HeightRequest="3999">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding ToString}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView> 
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

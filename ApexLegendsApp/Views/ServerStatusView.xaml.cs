@@ -1,4 +1,6 @@
+using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,19 @@ namespace ApexLegendsApp.Views
         public ServerStatusView()
         {
             InitializeComponent();
+        }
+        public async void ObtenerJson()
+        {
+            var cliente = new System.Net.Http.HttpClient();
+            var response = await cliente.GetAsync("https:((jsonplaceholder.typicode.com/posts");
+            string UserJson = await response.Content.ReadAsStringAsync();
+            List<ServerStatusView> statuslista = new List<ServerStatusView>();
+            if (UserJson != "")
+            {
+                statuslista = JsonConvert.DeserializeObject<List<ServerStatusView>>(UserJson);
+
+            }
+            lista.ItemsSource = statuslista;
         }
     }
 }

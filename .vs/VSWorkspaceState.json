@@ -4,8 +4,8 @@
     "\\ApexLegendsApp",
     "\\ApexLegendsApp\\Model",
     "\\ApexLegendsApp\\Services",
-    "\\ApexLegendsApp\\Views"
+    "\\ApexLegendsApp\\Views\\MasterDetail"
   ],
-  "SelectedNode": "\\ApexLegendsApp\\Views\\MasterDetail",
+  "SelectedNode": "\\ApexLegendsApp\\Model\\Weapon.cs",
   "PreviewInSolutionExplorer": false
 }
