@@ -4,8 +4,8 @@
     "\\ApexLegendsApp",
     "\\ApexLegendsApp\\Model",
     "\\ApexLegendsApp\\Services",
-    "\\ApexLegendsApp\\ViewModels"
+    "\\ApexLegendsApp\\Views"
   ],
-  "SelectedNode": "\\ApexLegendsApp\\ViewModels\\MainViewModel.cs",
+  "SelectedNode": "\\ApexLegendsApp\\Views\\MasterDetail",
   "PreviewInSolutionExplorer": false
 }

@@ -12,7 +12,7 @@ namespace ApexLegendsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MasterDetailPage());
         }
 
         protected override void OnStart()
